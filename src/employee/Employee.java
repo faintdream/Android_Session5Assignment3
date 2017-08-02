@@ -212,9 +212,9 @@ class TemporaryEmp extends Employee {                             //TemporaryEmp
 
     @Override                                                      //override method to calculate salary 
     void calculate_salary() {
-        this.pf = this.BASIC * 5 / 100;
-        this.hra = this.BASIC * 50 / 100;
-        this.total_salary = this.BASIC + this.hra - this.pf;
+        this.pf = this.BASIC * 5 / 100;                             //calculating pf
+        this.hra = this.BASIC * 50 / 100;                           // calculating hra 
+        this.total_salary = this.BASIC + this.hra - this.pf;        // calculating total salary
         System.out.println("-----------------------");
         System.out.println("Salary");
         System.out.println("Basic           : " + this.BASIC);
